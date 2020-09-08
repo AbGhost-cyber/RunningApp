@@ -17,7 +17,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import com.crushtech.runningapp.R
 import com.crushtech.runningapp.others.Constants.ACTION_PAUSE_SERVICE
-import com.crushtech.runningapp.others.Constants.ACTION_SHOW_TRACKING_FRAGMENT
 import com.crushtech.runningapp.others.Constants.ACTION_START_OR_RESUME_SERVICE
 import com.crushtech.runningapp.others.Constants.ACTION_STOP_SERVICE
 import com.crushtech.runningapp.others.Constants.FASTEST_LOCATION_INTERVAL
@@ -27,7 +26,6 @@ import com.crushtech.runningapp.others.Constants.NOTIFICATION_CHANNEL_NAME
 import com.crushtech.runningapp.others.Constants.NOTIFICATION_ID
 import com.crushtech.runningapp.others.Constants.TIMER_UPDATE_INTERVAL
 import com.crushtech.runningapp.others.TrackingUtils
-import com.crushtech.runningapp.ui.MainActivity
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationRequest
@@ -265,4 +263,26 @@ class TrackingService : LifecycleService() {
         stopForeground(true)
         stopSelf()
     }
+
 }
+//fun doSomething(x: Int): List<Int> {
+//    val list = mutableListOf<Int>()
+//    var bool = false
+//    for(i in 2..x) {
+//        for(j in 2 until i) {
+//            if(i % j == 0) {
+//                bool = true
+//            }
+//        }
+//        if(!bool) {
+//            list.add(i)
+//        }
+//        bool = false
+//    }
+//    return list
+//}
+
+
+
+
+
